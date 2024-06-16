@@ -1,0 +1,90 @@
+{
+    "title" : "Amélioration de la qualité de l’éducation des enfants vivant avec handicap par le jeu et le sport",
+    "duration" : 9,
+    "description" : "test",
+    "context" : "test",
+    "objectives" : [
+        {
+            "title" : "test",
+            "outcomes" : [
+                {
+                    "title" : "test",
+                    "activities" : [
+                        "test",
+                        "test"
+                    ]
+                },
+                {
+                    "title" : "test",
+                    "activities" : [
+                        "test",
+                        "test"
+                    ]
+                }
+            ]
+        }
+    ],
+    "outcomes" : [
+        "test",
+        "test"
+    ],
+    "activities" : [
+        "test",
+        "test"
+    ],
+    "budget" : 50000000,
+    "budget_plan" : {
+        "objectives" : [
+            {
+                "title" : "test",
+                "budget" : 10000,
+                "outcomes" : [
+                    {
+                        "title" : "test",
+                        "budget" : 10000,
+                        "activities" : [
+                            {
+                                "title" : "test",
+                                "budget" : 10000
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "test",
+                        "budget" : 10000,
+                        "activities" : [
+                            {
+                                "title" : "test",
+                                "budget" : 10000
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "calendar" : {
+        "outcomes" : [
+            {
+                "title" : "test",
+                "activities" : [
+                    {
+                        "title" : "test",
+                        "start_date" : "2022-01-01",
+                        "end_date" : "2022-01-01"
+                    },
+                    {
+                        "title" : "test",
+                        "start_date" : "2022-01-01",
+                        "end_date" : "2022-01-01"
+                    },
+                    {
+                        "title" : "test",
+                        "start_date" : "2022-01-01",
+                        "end_date" : "2022-01-01"
+                    }
+                ]
+            }
+        ]
+    }
+}
