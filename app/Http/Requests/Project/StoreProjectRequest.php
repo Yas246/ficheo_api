@@ -26,6 +26,9 @@ class StoreProjectRequest extends FormRequest
         return [
             'title' => ['nullable', 'string', 'max:255'],
             'overview' => ['nullable', 'string'],
+            'client' => ['nullable', 'string'],
+            'site' => ['nullable', 'string'],
+            'technicien' => ['nullable', 'string'],
             'context' => ['nullable', 'string'],
             'justification' => ['nullable', 'string'],
             'description' => ['nullable', 'string'],

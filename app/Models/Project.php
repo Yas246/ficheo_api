@@ -29,6 +29,9 @@ class Project extends Model
     protected $fillable = [
         'title',
         'overview',
+        'client',
+        'site',
+        'technicien',
         'context',
         'justification',
         'description',

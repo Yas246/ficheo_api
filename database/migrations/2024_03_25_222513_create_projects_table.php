@@ -16,6 +16,9 @@ return new class extends Migration
             //Introduction
             $table->string('title')->nullable();
             $table->text('overview')->nullable();
+            $table->text('client')->nullable();
+            $table->text('site')->nullable();
+            $table->text('technicien')->nullable();
             $table->text('context')->nullable();
             $table->text('justification')->nullable();
             $table->text('description')->nullable();
