@@ -11,6 +11,7 @@ use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\ProjectPlanController;
 use App\Http\Controllers\StatistiqueController;
 use App\Http\Controllers\AppConfigurationController;
+use App\Http\Controllers\FicheDInterventionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -68,3 +69,6 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('project-plans/search', [ProjectPlanController::class, 'search'])->name('project-plans.search');
     Route::apiResource('project-plans', ProjectPlanController::class);
 });
+
+
+Route::post('/fiche', [FicheDInterventionController::class, 'store']);
