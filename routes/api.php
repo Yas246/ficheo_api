@@ -68,7 +68,10 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     //Project Plans
     Route::post('project-plans/search', [ProjectPlanController::class, 'search'])->name('project-plans.search');
     Route::apiResource('project-plans', ProjectPlanController::class);
+
 });
 
 
 Route::post('/fiche', [FicheDInterventionController::class, 'store']);
+Route::get('/fiches', [FicheDInterventionController::class, 'index']);
+Route::get('/fiches/{id}', [FicheDInterventionController::class, 'show']);
