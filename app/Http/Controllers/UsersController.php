@@ -17,6 +17,16 @@ use Symfony\Component\HttpFoundation\Response;
 
 class UsersController extends Controller
 {
+    protected function validator(array $data)
+    {
+        return Validator::make($data, [
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'role' => ['required', 'string', 'in:administrateur,technicien'], // Validez le rôle ici
+        ]);
+    }
+
     public function index(Request $request)
     {
         abort_if(Gate::denies('user_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
@@ -75,6 +85,12 @@ class UsersController extends Controller
 
     public function store(StoreUserRequest $request)
     {
+        $validatedData = $request->validate([
+            'role' => 'nullable|string|in:administrateur,technicien',
+
+
+
+        ]);
         $user = User::create($request->all());
 
         if($request->roles)

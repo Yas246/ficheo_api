@@ -12,6 +12,7 @@ use App\Http\Controllers\ProjectPlanController;
 use App\Http\Controllers\StatistiqueController;
 use App\Http\Controllers\AppConfigurationController;
 use App\Http\Controllers\FicheDInterventionController;
+use App\Http\Controllers\MaintenanceReportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,3 +76,5 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 Route::post('/fiche', [FicheDInterventionController::class, 'store']);
 Route::get('/fiches', [FicheDInterventionController::class, 'index']);
 Route::get('/fiches/{id}', [FicheDInterventionController::class, 'show']);
+Route::post('/maintenance-reports', [MaintenanceReportController::class, 'store']);
+Route::get('/maintenance-reports', [MaintenanceReportController::class, 'index']);
